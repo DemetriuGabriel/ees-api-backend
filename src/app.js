@@ -4,8 +4,8 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
-const movies = [];
-const series = [];
+const movies = ['1'];
+const series = ['supernatural'];
 
 app.get('/movies/:id', (req, res) => {
   const { id } = req.params;
